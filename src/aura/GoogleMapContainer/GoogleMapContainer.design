@@ -1,0 +1,5 @@
+<design:component>
+    <sfdc:objects>
+        <sfdc:object>Account</sfdc:object>
+    </sfdc:objects>
+</design:component>

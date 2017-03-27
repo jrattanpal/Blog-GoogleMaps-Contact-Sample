@@ -1,6 +1,10 @@
-<aura:component access="global">
+<aura:component>
     <!-- Needed to send messages to VF page. But we will get it from VF itself -->
     <aura:attribute name="vfHost" type="String" default="" />
+
+    <!-- recordId attribute is not needed when using in one.app but adding it here as need to test it with DemoApp.app -->
+    <aura:attribute name="recordId" type="ID" />
+
     <!-- Google Map options -->
     <aura:attribute name="mapOptions" type="Object" default='{"zoom": 4}' />
     <!-- 
@@ -23,5 +27,5 @@
     <!-- Set listener from VF. This is to check when VF is loaded so we can send marker data -->
     <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
    
-	<iframe aura:id="vfFrame" src="{! '/apex/GoogleMap?lcHost=' + v.lcHost}" width="1000" height="500"/>
+	<iframe aura:id="vfFrame" src="{! '/apex/GoogleMap?lcHost=' + v.lcHost}" width="900" height="434"/>
 </aura:component>

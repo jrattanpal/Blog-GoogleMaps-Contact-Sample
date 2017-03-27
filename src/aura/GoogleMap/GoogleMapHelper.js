@@ -7,6 +7,7 @@
             			"mapOptions": component.get('v.mapOptions'),  
                        	'mapOptionsCenter': component.get('v.mapOptionsCenter')
         		} ;
+
         
         //Send message to VF
         helper.sendMessage(component, helper, message);

@@ -1,0 +1,17 @@
+<aura:component controller="GoogleMap"  description="GoogleMapContainer" access="global" implements="force:hasRecordId, flexipage:availableForAllPageTypes">
+
+    <aura:attribute name="con" type="Contact[]" />
+    <aura:attribute name="acc" type="Account[]" />
+
+    <aura:attribute name="recordId" type="Id" default="001460000055Qgs"/>
+    <aura:attribute name="mapOptions" type="Object" default='{"zoom": 2}' />
+    <aura:attribute name="mapOptionsCenter" type="Object" />
+    <aura:attribute name="mapData" type="Object[]" />
+
+    <!-- Fetch Account and contact list -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <aura:if isTrue="{!v.con.length > 0}">
+        <c:GoogleMap mapOptions="{!v.mapOptions}" mapOptionsCenter="{!v.mapOptionsCenter}" mapData="{!v.mapData}" recordId="{!v.recordId}" />
+    </aura:if>
+</aura:component>
