@@ -31,4 +31,4 @@ DemoApp.app
 - Send data to GoogleMaps.cmp to draw Google Map
 
 ## Architecture
-![Architecture](https://raw.githubusercontent.com/jrattanpal/Blog-GoogleMapsSample/master/Resources/Assets/GoogleMapsLightningComponents-Architecture.png?new)
+![Architecture](https://raw.githubusercontent.com/jrattanpal/Blog-GoogleMapsSample/master/Resources/Assets/GoogleMapsLightningComponents-Architecture.png?new=2)
