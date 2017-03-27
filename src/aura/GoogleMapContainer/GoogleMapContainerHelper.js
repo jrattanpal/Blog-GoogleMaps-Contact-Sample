@@ -41,7 +41,13 @@
                     var mapData = Array();
                     //cmp.set("v.opportunities", response.getReturnValue());
                     for(var i=0; i<ret.length; i++){
-                        mapData.push({"lat":parseFloat(ret[i].MailingLatitude), "lng":parseFloat(ret[i].MailingLongitude), "markerText":ret[i].Name})
+                        if(!$A.util.isEmpty(ret[i].MailingLatitude) && !($A.util.isEmpty(ret[i].MailingLongitude))) {
+                            mapData.push({
+                                "lat": parseFloat(ret[i].MailingLatitude),
+                                "lng": parseFloat(ret[i].MailingLongitude),
+                                "markerText": ret[i].Name
+                            })
+                        }
                     }
 
                     component.set('v.mapOptionsCenter', mapOptionsCenter);
