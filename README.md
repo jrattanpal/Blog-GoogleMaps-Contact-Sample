@@ -1,7 +1,7 @@
 # Implement Google Maps in Lightning Components
 
 
-<a href="https://githubsfdeploy.herokuapp.com?owner=jrattanpal&repo=Blog-GoogleMapsSample">
+<a href="https://githubsfdeploy.herokuapp.com?owner=jrattanpal&repo=Blog-GoogleMaps-Contact-Sample">
   <img alt="Deploy to Salesforce" src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
 </a>
 <br/><br/>
