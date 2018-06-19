@@ -16,6 +16,9 @@
         //Send message to VF
         message.origin = window.location.hostname;
         var vfWindow = component.find("vfFrame").getElement().contentWindow;
+	//Making following change as per https://stackoverflow.com/questions/42376464/uncaught-domexception-failed-to-execute-postmessage-on-window-an-object-co
+	//Only tested in Chrome (not Firefox)
+	message = JSON.parse(JSON.stringify(message));
         vfWindow.postMessage(message, component.get("v.vfHost"));
     }
 })
